@@ -8,6 +8,7 @@ const server = express();
 server.use(helmet());
 
 // server.use('/api', apiRouter);
+server.use('/')
 
 server.get('/', (req, res) => {
     res.status(200).json({ Hello: "Full stack Web developer"})
